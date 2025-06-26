@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OUEMGIE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(180deg, #fff 0%, #FFF7E0 100%);
+      color: #4A3F35;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #FFD971;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #fff;
+    }
+    nav a {
+      font-size: 1rem;
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      opacity: 0.8;
+    }
+    section {
+      padding: 6rem 2rem 4rem;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .logo-section {
+      padding-top: 7rem;
+      padding-bottom: 2rem;
+    }
+    .logo-section img {
+      width: 200px;
+      margin-bottom: 0.5rem;
+    }
+    .about { padding-top: 2rem; }
+    .about p {
+      font-size: 1rem;
+      margin-top: 1rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #4A3F35;
+    }
+    .section-title {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #FFD971;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .cards, .social-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+    }
+    .card {
+      background: white;
+      border: 2px solid #FFD971;
+      border-radius: 15px;
+      padding: 1.5rem;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      color: #FFD971;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      color: #4A3F35;
+    }
+    .card a {
+      display: inline-block;
+      background: #FFD971;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      color: #4A3F35;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .card a:hover {
+      background: #ffe397;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    @media (min-width: 768px) {
+      .cards, .social-cards {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>OUEMGIE</h1>
+    <nav>
+      <a href="#about">ABOUT ME</a>
+      <a href="#social">SOCIAL MEDIA</a>
+      <a href="#more">MORE</a>
+    </nav>
+  </header>
+  <section class="logo-section">
+    <img src="images/logo-ouemgie1.png" alt="OUEMGIE Logo" />
+  </section>
+  <section id="about" class="about">
+    <h2 class="section-title">ABOUT ME</h2>
+    <p>
+      Halo, MinGie is here! Salam kenal~<br /><br />
+      OUEMGIE dibuat sebagai ruang untuk ngobrolin hal-hal kecil yang sering muncul di kepala, mulai dari kebiasaan yang kita anggap sepele, sampai pertanyaan-pertanyaan yang kadang suka muncul tiba-tiba. Misalnya, kenapa kita gampang minder atau kenapa lagu bisa bikin nostalgia.<br /><br />
+      Di sini, MinGie coba bahas semuanya pakai sudut pandang psikologi. Tapi santai aja, bahasanya tetap dibikin sederhana, supaya bisa sama-sama dipahami dan dinikmati bareng. Karena kadang hal yang kita anggap cuma “pikiran lewat”, sebenarnya bisa jadi insight yang bermakna.
+    </p>
+  </section>
+  <section id="social" class="social-cards">
+    <h2 class="section-title">SOCIAL MEDIA</h2>
+    <div class="card">
+      <h3>Instagram</h3>
+      <p>Yuk follow Instagram OUEMGIE untuk info, konten seru, dan update lainnya!</p>
+      <a href="https://www.instagram.com/ouemgie" target="_blank">Click here</a>
+    </div>
+    <div class="card">
+      <h3>TikTok</h3>
+      <p>Yuk follow TikTok OUEMGIE juga untuk info, konten seru, dan update lainnya!</p>
+      <a href="https://www.tiktok.com/@ouemgie.omg" target="_blank">Click here</a>
+    </div>
+    <div class="card">
+      <h3>Email</h3>
+      <p>Punya pertanyaan atau kerjasama? Kirim email ke OUEMGIE yuk!</p>
+      <a href="mailto:ouemgie@gmail.com?subject=Halo%20MinGie!" target="_blank">Click here</a>
+    </div>
+  </section>
+  <section id="more" class="more">
+    <h2 class="section-title">MORE</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Mood Booster Beats</h3>
+        <p>Ayo, dengerin musik-musik pilihan disini yang asik banget, bikin kamu semangat maksimal, fokus, dan happy! Because sometimes, your brain needs a beat drop to keep going.</p>
+        <a href="https://open.spotify.com/user/31yustxxda6ek5sxo4wk3qo56fbu" target="_blank">Click here</a>
+      </div>
+      <div class="card">
+        <h3>Reflect Pad</h3>
+        <p>Template journaling mini bisa kamu download disini, journaling sangat membantu untuk menulis refleksi pribadi, insight, atau emosi kita masing-masing. Journaling turns scattered thoughts into seeds of clarity.</p>
+        <a href="https://drive.google.com/drive/folders/1-_ciMDyJ87MtlehuX2mggV8mlY8gve-W" target="_blank">Click here</a>
+      </div>
+      <div class="card">
+        <h3>Read Deep</h3>
+        <p>Disini, tersedia sumber literatur yang jadi landasan konten-konten OUEMGIE, bisa kita pahami konteksnya lebih mendalam! Reading isn't passive—it's a journey into minds beyond your own.</p>
+        <a href="https://drive.google.com/drive/folders/1-qxk_GAZjL_riPuMx6CG-RLY6j63NGrO" target="_blank">Click here</a>
+      </div>
+    </div>
+  </section>
+  <footer>&copy; 2025 OUEMGIE</footer>
+</body>
+</html>
